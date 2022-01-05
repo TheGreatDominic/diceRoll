@@ -8,8 +8,7 @@ body{
 }
 
 .show{
-    margin: auto;
-    display: block;
+    display: inline-block;
 }
 
 .noShow{

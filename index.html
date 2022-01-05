@@ -8,16 +8,14 @@
     <title>Dice Roll</title>
 </head>
 <body>
-    <h1>Dice Roll!</h1>
-    <h2>This program allows you to roll a die!</h2>
+    <h1>Yahtzee</h1>
+    <h2>Enjoy this family friendly game!</h2>
     <div class="diceContainer">
-        <img id="allDice" class="show" src="images/all.PNG" alt="All six dice">
-        <img id="diceOne" class="noShow" src="images/one.PNG" alt="Dice roll one">
-        <img id="diceTwo" class="noShow" src="images/two.PNG" alt="Dice roll two">
-        <img id="diceThree" class="noShow" src="images/three.PNG" alt="Dice roll three">
-        <img id="diceFour" class="noShow" src="images/four.PNG" alt="Dice roll four">
-        <img id="diceFive" class="noShow" src="images/five.PNG" alt="Dice roll five">
-        <img id="diceSix" class="noShow" src="images/six.PNG" alt="Dice roll six">
+        <input id="diceOne" class="show" type="image" src="images/blank.jpg" alt="blank dice" onclick="toggleFunc()";>
+        <input id="diceTwo" class="show" type="image" src="images/blank.jpg" alt="blank dice" onclick="toggleFunc()";>
+        <input id="diceThree" class="show" type="image" src="images/blank.jpg" alt="blank dice" onclick="toggleFunc()";>
+        <input id="diceFour" class="show" type="image" src="images/blank.jpg" alt="blank dice" onclick="toggleFunc()";>
+        <input id="diceFive" class="show" type="image" src="images/blank.jpg" alt="blank dice" onclick="toggleFunc()";>
     </div>
     <button onclick="rollFunc()"; id="rollButton" class="show">Click here to roll!</button>
     <button onclick="resetFunc()"; id="resetButton" class="noShow">Click here to reset!</button>
