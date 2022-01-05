@@ -1,0 +1,17 @@
+body{
+    text-align: center;
+    margin: auto;
+}
+
+.diceContainer{
+    margin: auto;
+}
+
+.show{
+    margin: auto;
+    display: block;
+}
+
+.noShow{
+    display: none;
+}
