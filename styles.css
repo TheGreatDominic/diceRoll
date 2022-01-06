@@ -3,14 +3,70 @@ body{
     margin: auto;
 }
 
+h1, h2{
+    margin: 0px;
+}
+
+.playField{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 100%;
+}
+
+.scoreboard{
+    grid-column: 1 / 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 5fr;
+    border: 3px solid red;
+}
+
+.scoreTitle{
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    border: 3px solid yellow;
+    background-color: grey;
+    justify-items: center;
+}
+
+.leftScore{
+    text-align: left;
+    font-size: 15px;
+    margin-left: 30px;
+    max-height: 15px;
+    margin: 10px;
+    border-bottom: 1px solid black;
+    max-width: 50%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.rightScore{
+    text-align: right;
+    max-width: 50%;
+}
+
 .diceContainer{
+    grid-column: 2 / 3;
+}
+
+#rollButton{
     margin: auto;
+    display: block;
 }
 
-.show{
-    display: inline-block;
+.saved{
+    border: 5px solid blue;
 }
 
-.noShow{
-    display: none;
+.unsaved{
+    border: none;
+}
+
+.gridItem{
+    background-color: grey;
+    border: 5px solid orange;
 }

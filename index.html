@@ -10,15 +10,43 @@
 <body>
     <h1>Yahtzee</h1>
     <h2>Enjoy this family friendly game!</h2>
-    <div class="diceContainer">
-        <input id="diceOne" class="show" type="image" src="images/blank.jpg" alt="blank dice" onclick="toggleFunc()";>
-        <input id="diceTwo" class="show" type="image" src="images/blank.jpg" alt="blank dice" onclick="toggleFunc()";>
-        <input id="diceThree" class="show" type="image" src="images/blank.jpg" alt="blank dice" onclick="toggleFunc()";>
-        <input id="diceFour" class="show" type="image" src="images/blank.jpg" alt="blank dice" onclick="toggleFunc()";>
-        <input id="diceFive" class="show" type="image" src="images/blank.jpg" alt="blank dice" onclick="toggleFunc()";>
+    <div class="playField">    
+        <div class="scoreboard">
+            <div>
+                <h3 class="scoreTitle">Scoreboard</h3>
+            </div>
+            <p class="leftScore">Ones</p>
+            <p class="leftScore">Twos</p>
+            <p class="leftScore">Threes</p>
+            <p class="leftScore">Fours</p>
+            <p class="leftScore">Fives</p>
+            <p class="leftScore">Sixes</p>
+            <p class="leftScore">Subtotal</p>
+            <p class="leftScore">Bonus</p>
+            <p class="leftScore">Upper Total</p>
+            <br>
+            <p class="leftScore">3 of a Kind</p>
+            <p class="leftScore">4 of a Kind</p>
+            <p class="leftScore">Full House</p>
+            <p class="leftScore">Small Straight</p>
+            <p class="leftScore">Large Straight</p>
+            <p class="leftScore">Yahtzee</p>
+            <p class="leftScore">Chance</p>
+            <p class="leftScore">Bonus Yahtzee</p>
+            <p class="leftScore">Lower Total</p>
+            <p class="leftScore">Upper Total</p>
+            <p class="leftScore">Lower Total</p>
+            <p class="leftScore">Grand Total</p>
+        </div>
+        <div class="diceContainer">
+            <input id="diceOne" type="image" src="images/blank.jpg" alt="blank dice" onclick="toggleFunc1()";>
+            <input id="diceTwo" type="image" src="images/blank.jpg" alt="blank dice" onclick="toggleFunc2()";>
+            <input id="diceThree" type="image" src="images/blank.jpg" alt="blank dice" onclick="toggleFunc3()";>
+            <input id="diceFour" type="image" src="images/blank.jpg" alt="blank dice" onclick="toggleFunc4()";>
+            <input id="diceFive" type="image" src="images/blank.jpg" alt="blank dice" onclick="toggleFunc5()";>
+            <button onclick="rollFunc()"; id="rollButton" class="show">Click here to roll!</button>
+        </div>
     </div>
-    <button onclick="rollFunc()"; id="rollButton" class="show">Click here to roll!</button>
-    <button onclick="resetFunc()"; id="resetButton" class="noShow">Click here to reset!</button>
 <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
