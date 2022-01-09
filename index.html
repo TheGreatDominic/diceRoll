@@ -11,39 +11,38 @@
     <h1>Yahtzee</h1>
     <h2>Enjoy this family friendly game!</h2>
     <div class="playField">    
-        <div class="scoreboard">
-            <div>
-                <h3 class="scoreTitle">Scoreboard</h3>
-            </div>
-            <p class="leftScore">Ones</p>
-            <p class="leftScore">Twos</p>
-            <p class="leftScore">Threes</p>
-            <p class="leftScore">Fours</p>
-            <p class="leftScore">Fives</p>
-            <p class="leftScore">Sixes</p>
-            <p class="leftScore">Subtotal</p>
-            <p class="leftScore">Bonus</p>
-            <p class="leftScore">Upper Total</p>
-            <br>
-            <p class="leftScore">3 of a Kind</p>
-            <p class="leftScore">4 of a Kind</p>
-            <p class="leftScore">Full House</p>
-            <p class="leftScore">Small Straight</p>
-            <p class="leftScore">Large Straight</p>
-            <p class="leftScore">Yahtzee</p>
-            <p class="leftScore">Chance</p>
-            <p class="leftScore">Bonus Yahtzee</p>
-            <p class="leftScore">Lower Total</p>
-            <p class="leftScore">Upper Total</p>
-            <p class="leftScore">Lower Total</p>
-            <p class="leftScore">Grand Total</p>
-        </div>
+        <table class="scoreboard">
+            <tr><th colspan="2">Scoreboard</th></tr>
+            <tr><td class="scoreCategoryName">Ones</td><td id="onesScore" class="scoreCategory" onclick="scoreSelect('Ones')";>--</td></tr>
+            <tr><td class="scoreCategoryName">Twos</td><td id="twosScore" class="scoreCategory" onclick="scoreSelect('Twos')";>--</td></tr>
+            <tr><td class="scoreCategoryName">Threes</td><td id="threesScore" class="scoreCategory" onclick="scoreSelect('Threes')";>--</td></tr>
+            <tr><td class="scoreCategoryName">Fours</td><td id="foursScore" class="scoreCategory" onclick="scoreSelect('Fours')";>--</td></tr>
+            <tr><td class="scoreCategoryName">Fives</td><td id="fivesScore" class="scoreCategory" onclick="scoreSelect('Fives')";>--</td></tr>
+            <tr><td class="scoreCategoryName">Sixes</td><td id="sixesScore" class="scoreCategory" onclick="scoreSelect('Sixes')";>--</td></tr>
+            <tr><td class="scoreCategoryName">Subtotal</td><td id="subtotal">--</td></tr>
+            <tr><td class="scoreCategoryName">Bonus (35 points if Subotal > 63)</td><td id="bonus">--</td></tr>
+            <tr><td class="scoreCategoryName">Upper Total</td><td class="upperTotal" id="upperTotal1">--</td></tr>
+            <tr><td class="blankRow" colspan="2"></td></tr>
+            <tr><td class="scoreCategoryName">3 of a Kind</td><td id="threeOfKindScore" class="scoreCategory" onclick="scoreSelect('ThreeOfKind')";>--</td></tr>
+            <tr><td class="scoreCategoryName">4 of a Kind</td><td id="fourOfKindScore" class="scoreCategory" onclick="scoreSelect('FourOfKind')";>--</td></tr>
+            <tr><td class="scoreCategoryName">Full House</td><td id="fullHouseScore" class="scoreCategory" onclick="scoreSelect('FullHouse')";>--</td></tr>
+            <tr><td class="scoreCategoryName">Small Straight</td><td id="smallStraightScore" class="scoreCategory" onclick="scoreSelect('SmallStraight')";>--</td></tr>
+            <tr><td class="scoreCategoryName">Large Straight</td><td id="largeStraightScore" class="scoreCategory" onclick="scoreSelect('LargeStraight')";>--</td></tr>
+            <tr><td class="scoreCategoryName">Yahtzee</td><td id="yahtzeeScore" class="scoreCategory" onclick="scoreSelect('Yahtzee')";>--</td></tr>
+            <tr><td class="scoreCategoryName">Chance</td><td id="chanceScore" class="scoreCategory" onclick="scoreSelect('Chance')">--</td></tr>
+            <tr><td class="scoreCategoryName">Bonus Yahtzee</td><td id="bonusYahtzeeScore" class="scoreCategory" onclick="scoreSelect('BonusYahtzee')";>--</td></tr>
+            <tr><td class="scoreCategoryName">Lower Total</td><td class="lowerTotal" id="lowerTotal1">--</td></tr>
+            <tr><td class="blankRow" colspan="2"></td></tr>
+            <tr><td class="scoreCategoryName">Upper Total</td><td class="upperTotal" id="upperTotal2">--</td></tr>
+            <tr><td class="scoreCategoryName">Lower Total</td><td class="lowerTotal" id="lowerTotal2">--</td></tr>
+            <tr><td class="scoreCategoryName">Grand Total</td><td id="grandTotal">--</td></tr>
+        </table>
         <div class="diceContainer">
-            <input id="diceOne" type="image" src="images/blank.jpg" alt="blank dice" onclick="toggleFunc1()";>
-            <input id="diceTwo" type="image" src="images/blank.jpg" alt="blank dice" onclick="toggleFunc2()";>
-            <input id="diceThree" type="image" src="images/blank.jpg" alt="blank dice" onclick="toggleFunc3()";>
-            <input id="diceFour" type="image" src="images/blank.jpg" alt="blank dice" onclick="toggleFunc4()";>
-            <input id="diceFive" type="image" src="images/blank.jpg" alt="blank dice" onclick="toggleFunc5()";>
+            <input id="d1" type="image" src="images/blank.jpg" alt="blank dice" onclick="toggleFunc(1)";>
+            <input id="d2" type="image" src="images/blank.jpg" alt="blank dice" onclick="toggleFunc(2)";>
+            <input id="d3" type="image" src="images/blank.jpg" alt="blank dice" onclick="toggleFunc(3)";>
+            <input id="d4" type="image" src="images/blank.jpg" alt="blank dice" onclick="toggleFunc(4)";>
+            <input id="d5" type="image" src="images/blank.jpg" alt="blank dice" onclick="toggleFunc(5)";>
             <button onclick="rollFunc()"; id="rollButton" class="show">Click here to roll!</button>
         </div>
     </div>
